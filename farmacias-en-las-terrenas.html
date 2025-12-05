@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre las farmacias disponibles en el municipio de Las Terrenas">
+    <meta name="keywords" content="farmacias, Las Terrenas, medicinas, farmacia local, servicios farmacéuticos">
+    <meta name="author" content="Farmacias Locales en Samaná">
+    <title>Encuentra Farmacias En Las Terrenas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .text-accent {
+            color: var(--accent);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .card-rounded {
+            border-radius: 1rem;
+        }
+        
+        .card-lg-rounded {
+            border-radius: 1.5rem;
+        }
+        
+        .transition-energetic {
+            transition: all 0.3s ease-out;
+        }
+        
+        .hover-lift:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #7B68EE 100%);
+        }
+        
+        .section-spacing {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        @media (min-width: 768px) {
+            .section-spacing {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-pills text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-semibold text-primary">FarmaSamaná</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Inicio</a>
+                <a href="index.html#features" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Características</a>
+                <a href="index.html#benefits" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Beneficios</a>
+                <a href="farmacias-en-las-terrenas.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Farmacias en Las Terrenas</a>
+                <a href="index.html#faq" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Preguntas</a>
+                <a href="https://farmaciasensamana.com" class="btn-primary">Acceder Ahora</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-primary text-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 px-4 py-4 flex flex-col gap-4">
+            <a href="index.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Inicio</a>
+            <a href="index.html#features" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Características</a>
+            <a href="index.html#benefits" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Beneficios</a>
+            <a href="farmacias-en-las-terrenas.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Farmacias en Las Terrenas</a>
+            <a href="index.html#faq" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Preguntas</a>
+            <a href="https://farmaciasensamana.com" class="btn-primary text-center">Acceder Ahora</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-10 right-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-48 h-48 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+                        Farmacias en Las Terrenas
+                    </h1>
+                    <p class="text-lg md:text-xl font-light leading-relaxed mb-8 text-gray-100">
+                        Encuentra todas las farmacias disponibles en el municipio de Las Terrenas. Acceso rápido a medicinas, servicios farmacéuticos y entrega a domicilio sin costo adicional.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://farmaciasensamana.com" class="btn-primary text-center">
+                            <i class="fas fa-search mr-2"></i>Buscar Farmacias
+                        </a>
+                        <a href="#mapa" class="px-8 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 text-center">
+                            <i class="fas fa-map mr-2"></i>Ver Mapa
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex justify-center items-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="bg-white rounded-2xl shadow-2xl p-8 text-gray-800">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-primary text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-light text-gray-500">Tu Ubicación</p>
+                                    <p class="font-semibold text-gray-800">Las Terrenas, Samaná</p>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="bg-secondary rounded-xl p-4 hover:shadow-lg transition-all duration-300">
+                                    <p class="font-semibold text-gray-800 mb-1">Farmacia Las Terrenas</p>
+                                    <p class="text-sm text-gray-600 mb-2">Centro de la ciudad</p>
+                                    <p class="text-xs font-light text-gray-500">Abierto hasta las 22:00</p>
+                                </div>
+                                
+                                <div class="bg-secondary rounded-xl p-4 hover:shadow-lg transition-all duration-300">
+                                    <p class="font-semibold text-gray-800 mb-1">Farmacia Express</p>
+                                    <p class="text-sm text-gray-600 mb-2">Zona comercial</p>
+                                    <p class="text-xs font-light text-gray-500">Abierto 24 horas</p>
+                                </div>
+                                
+                                <div class="bg-secondary rounded-xl p-4 hover:shadow-lg transition-all duration-300">
+                                    <p class="font-semibold text-gray-800 mb-1">Farmacia del Caribe</p>
+                                    <p class="text-sm text-gray-600 mb-2">Playa Las Terrenas</p>
+                                    <p class="text-xs font-light text-gray-500">Abierto hasta las 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Servicios Farmacéuticos en Las Terrenas
+                </h2>
+                <p class="text-lg text-gray-600 font-light max-w-2xl mx-auto">
+                    Acceso completo a medicinas, consultas y servicios de entrega en el municipio de Las Terrenas
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 font-light leading-relaxed mb-6">
+                        Las Terrenas, uno de los municipios más importantes de la provincia de Samaná, cuenta con una red de farmacias modernas y bien equipadas que brindan servicios de calidad a residentes y visitantes. Nuestro directorio incluye todas las farmacias disponibles en la zona, desde establecimientos en el centro de la ciudad hasta aquellos ubicados en las playas y zonas residenciales.
+                    </p>
+                    <p class="text-lg text-gray-700 font-light leading-relaxed mb-6">
+                        Cada farmacia en Las Terrenas está verificada y ofrece una amplia variedad de medicinas, productos de salud y servicios farmacéuticos profesionales. Contamos con farmacias que atienden 24 horas para emergencias médicas, así como establecimientos con horarios extendidos para mayor comodidad de nuestros usuarios.
+                    </p>
+                    <p class="text-lg text-gray-700 font-light leading-relaxed">
+                        Utilizamos nuestra plataforma para conectarte con la farmacia más cercana a tu ubicación, ofreciendo entrega gratuita a domicilio y atención profesional en todo momento. Tu salud es nuestra prioridad.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-secondary to-white rounded-2xl shadow-lg p-8 hover-lift transition-energetic">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Servicios Disponibles</h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Venta de Medicinas</h4>
+                                <p class="text-gray-600 font-light">Amplio catálogo de medicinas genéricas y de marca</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Entrega a Domicilio</h4>
+                                <p class="text-gray-600 font-light">Servicio gratuito en toda el área de Las Terrenas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Atención 24/7</h4>
+                                <p class="text-gray-600 font-light">Farmacias disponibles a cualquier hora del día</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Consultas Farmacéuticas</h4>
+                                <p class="text-gray-600 font-light">Asesoría profesional de farmacéuticos calificados</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Productos de Salud</h4>
+                                <p class="text-gray-600 font-light">Artículos de cuidado personal y bienestar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="mapa" class="section-spacing bg-gradient-to-br from-secondary to-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Ubica las Farmacias en Las Terrenas
+                </h2>
+                <p class="text-lg text-gray-600 font-light max-w-2xl mx-auto">
+                    Visualiza la ubicación exacta de todas las farmacias disponibles en el municipio
+                </p>
+            </div>
+            
+            <div class="rounded-2xl overflow-hidden shadow-2xl hover-lift transition-energetic">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3774.8363937527743!2d-69.61087!3d19.267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfarmacias!5e0!3m2!1ses!2sdo!4v1234567890" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Información Importante</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Ubicación Exacta</h4>
+                            <p class="text-gray-600 font-light">El mapa muestra la ubicación precisa de cada farmacia en Las Terrenas para tu facilidad</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                <i class="fas fa-phone text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Contacto Directo</h4>
+                            <p class="text-gray-600 font-light">Comunícate directamente con la farmacia de tu preferencia desde nuestra plataforma</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                <i class="fas fa-info-circle text-white text-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Información Actualizada</h4>
+                            <p class="text-gray-600 font-light">Horarios, servicios y datos de contacto actualizados en tiempo real</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                    Por Qué Elegir Nuestro Servicio
+                </h2>
+                <p class="text-lg text-gray-600 font-light max-w-2xl mx-auto">
+                    Razones por las que somos la mejor opción para encontrar farmacias en Las Terrenas
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-secondary rounded-2xl p-8 hover-lift transition-energetic group">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-energetic">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Búsqueda Rápida</h3>
+                    <p class="text-gray-700 font-light leading-relaxed">
+                        Encuentra farmacias en Las Terrenas en segundos. Nuestra plataforma utiliza geolocalización avanzada para mostrarte las opciones más cercanas y disponibles en tiempo real.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-secondary rounded-2xl p-8 hover-lift transition-energetic group">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-energetic">
+                        <i class="fas fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Entrega Gratuita</h3>
+                    <p class="text-gray-700 font-light leading-relaxed">
+                        Recibe tus medicinas a domicilio sin costo adicional. Nuestro servicio de entrega cubre toda el área de Las Terrenas con profesionales capacitados.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-secondary rounded-2xl p-8 hover-lift transition-energetic group">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-energetic">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Seguridad Garantizada</h3>
+                    <p class="text-gray-700 font-light leading-relaxed">
+                        Todas nuestras farmacias son verificadas y autorizadas. Garantizamos medicinas auténticas y servicios profesionales con los más altos estándares de calidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-spacing relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                    ¿Necesitas una Farmacia en Las Terrenas?
+                </h2>
+                <p class="text-lg md:text-xl text-gray-100 font-light mb-8 max-w-2xl mx-auto">
+                    Accede a nuestro directorio completo de farmacias y obtén entrega gratuita a domicilio en Las Terrenas ahora mismo.
+                </p>
+                <a href="https://farmaciasensamana.com" class="inline-block btn-primary">
+                    <i class="fas fa-arrow-right mr-2"></i>Acceder a la Plataforma
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8">
+                <!-- Column 1 - Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-pills text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-white">FarmaSamaná</span>
+                    </div>
+                    <p class="text-sm font-light leading-relaxed text-gray-400">
+                        Tu plataforma confiable para encontrar farmacias en Las Terrenas y Samaná con acceso 24/7 y entrega gratuita a domicilio.
+                    </p>
+                </div>
+                
+                <!-- Column 2 - Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#features" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Características
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#benefits" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Beneficios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#faq" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Preguntas Frecuentes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 - Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Servicios</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://farmaciasensamana.com" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Localizador de Farmacias
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://farmaciasensamana.com" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Entrega a Domicilio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://farmaciasensamana.com" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Consultas Farmacéuticas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://farmaciasensamana.com" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                Horarios 24/7
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 - Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:info@farmaciasensamana.com" class="text-gray-400 hover:text-primary transition-all duration-300 font-light">
+                                info@farmaciasensamana.com
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span class="text-gray-400 font-light">Las Terrenas, Samaná</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span class="text-gray-400 font-light">Disponible 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="border-t border-gray-700 pt-8 mb-8">
+                <h4 class="text-lg font-semibold text-white mb-4">Síguenos</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-whatsapp text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 font-light text-sm">
+                    &copy; 2025 Farmacias Locales en Samaná. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
