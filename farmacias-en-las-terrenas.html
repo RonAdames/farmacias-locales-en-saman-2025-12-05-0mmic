@@ -104,6 +104,12 @@
                 <a href="index.html#benefits" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Beneficios</a>
                 <a href="farmacias-en-las-terrenas.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Farmacias en Las Terrenas</a>
                 <a href="index.html#faq" class="text-gray-700 font-normal hover:text-primary transition-all duration-300">Preguntas</a>
+                <div class="relative group">
+                    <button class="text-gray-700 font-normal hover:text-primary transition-all duration-300 flex items-center gap-1">Farmacias <i class="fas fa-chevron-down text-xs"></i></button>
+                    <div class="absolute left-0 mt-0 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 z-50">
+                        <a href="farmacias-en-las-terrenas.html" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-secondary transition-all duration-300">Farmacias en Las Terrenas</a>
+                    </div>
+                </div>
                 <a href="https://farmaciasensamana.com" class="btn-primary">Acceder Ahora</a>
             </div>
             
@@ -120,6 +126,12 @@
             <a href="index.html#benefits" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Beneficios</a>
             <a href="farmacias-en-las-terrenas.html" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Farmacias en Las Terrenas</a>
             <a href="index.html#faq" class="text-gray-700 font-normal hover:text-primary transition-all duration-300 py-2">Preguntas</a>
+            <div class="py-2">
+                <button class="w-full text-left text-gray-700 font-normal hover:text-primary transition-all duration-300 px-0 flex items-center gap-2 mobile-submenu-toggle">Farmacias <i class="fas fa-chevron-down text-xs"></i></button>
+                <div class="mobile-submenu hidden pl-4 mt-2 space-y-2">
+                    <a href="farmacias-en-las-terrenas.html" class="block text-gray-700 hover:text-primary transition-all duration-300 py-2">Farmacias en Las Terrenas</a>
+                </div>
+            </div>
             <a href="https://farmaciasensamana.com" class="btn-primary text-center">Acceder Ahora</a>
         </div>
     </header>
@@ -546,6 +558,21 @@
             // Mobile Menu Toggle
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileMenu = document.querySelector('.mobile-menu');
+            
+            // Mobile Submenu Toggle
+            const mobileSubmenuToggles = document.querySelectorAll('.mobile-submenu-toggle');
+            mobileSubmenuToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const submenu = toggle.nextElementSibling;
+                    if (submenu) {
+                        submenu.classList.toggle('hidden');
+                        const icon = toggle.querySelector('i');
+                        if (icon) {
+                            icon.classList.toggle('rotate-180');
+                        }
+                    }
+                });
+            });
             
             if (mobileMenuButton && mobileMenu) {
                 mobileMenuButton.addEventListener('click', () => {
